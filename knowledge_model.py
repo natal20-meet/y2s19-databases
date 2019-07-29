@@ -7,7 +7,7 @@ Base = declarative_base()
 
 class Knowledge(Base):
 	__tablename__ = "Topics to learn about"
-	topic_id= Column(String, primary_key = True )
+	topic_id= Column(Integer, primary_key = True )
 	art_title = Column(String)
 	wiki_link = Column(String)
 	rating = Column(Integer)
@@ -20,8 +20,8 @@ class Knowledge(Base):
 					self.wiki_link,
 					self.rating)
 
-article_1 = Knowledge(art_title = "Quantum Physics", wiki_link = 'https://en.wikipedia.org/wiki/Quantum_mechanics', rating = 7)
-print(article_1)
+#article_1 = Knowledge(art_title = "Quantum Physics", wiki_link = 'https://en.wikipedia.org/wiki/Quantum_mechanics', rating = 7)
+#print(article_1)
 
 	# Create a table with 4 columns
 	# The first column will be the primary key
